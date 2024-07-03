@@ -1,2 +1,21 @@
+## User Story
+
+```md
 As a USER I want to enter my recipes
+So that they will list in order of quickest cooktimes
+And display last recipe entered prominently
+```
+
+## Acceptance Criteria
+
+GIVEN I'd need a personal recipe blog
+WHEN I load the app
+THEN I am presented with a page containing 'add recipe' and stored recipes
+WHEN I click 'add recipe' I am given a form to enter in recipe title, information, and cooktime
+THEN when I click submit it will add information to locally stored recipes and display
+WHEN I click delete recipe 
+THEN The displayed recipe will be deleted along with the locally stored recipe
+WHEN I change the page size or view on a smaller device
+THEN I am presented with an responsive layout that changes to my viewport
+
 
