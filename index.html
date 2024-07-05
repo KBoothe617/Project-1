@@ -13,7 +13,28 @@
         <!--Header with title-->
         <header>
             <h1>Personal Recipe Catalog</h1>
+            <nav>
+                <!--Button for new recipe pop up in headers navagation bar-->
+                <!--ID addNewRecipe for button-->
+                <button id="addNewRecipe">Add New Recipe</button>
+            </nav>
         </header>
+
+        <main>
+            <!--Sidebar that will store recipes-->
+            <!--Id sidebar for container for recipes-->
+            <div id="sidebar">
+                <!--Class recipe-list and Id recipeList these are children under the sidebar, maybe we rename these so they don't get confused-->
+                <ul class="recipe-list" id="recipeList">
+                    <!--Recipes will dynamically be added here-->
+                </ul>
+            </div>
+        </main>
+
+        <!--Footer we will add in the information we want here later-->
+        <footer>
+            <p>Place Holder Text</p>
+        </footer>
         <!--Link to java script-->
         <script src="./assets/script.js"></script>
     </body>
