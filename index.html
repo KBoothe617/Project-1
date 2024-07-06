@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!--Link to css sheet, Title of the site-->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/style.css" />
-        <title>Personal Recipe Catalog</title>
-    </head>
+<head>
+    <!--Link to css sheet, Title of the site-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Personal Recipe Catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Your file css -->
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<div class="container">
 
     <body>
         <!--Header with title-->
         <header>
-            <h1>Personal Recipe Catalog</h1>
-            <nav>
-                <!--Button for new recipe pop up in headers navagation bar-->
-                <!--ID addNewRecipe for button-->
-                <button id="addNewRecipe">Add New Recipe</button>
-            </nav>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Personal Recipe Catalog</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!--Button for new recipe pop up in headers navagation bar-->
+                    <!--ID addNewRecipe for button-->
+                    <button class="btn btn-primary" id="addNewRecipe">Add New Recipe</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="recipe-list" id="recipeList">
+                        <!--Recipes will dynamically be added here-->
+                    </ul>
+                </div>
+            </div>
+
         </header>
 
         <main>
@@ -37,6 +56,8 @@
         </footer>
         <!--Link to java script-->
         <script src="./assets/script.js"></script>
-    </body>
+</div>
+</body>
+
 
 </html>
