@@ -9,13 +9,16 @@
     /* Set font and background color */
     body {
         font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
+        background-color: #f2f2f2; 
     }
 
     /* Add some padding to the container */
     .container {
         padding: 20px;
     }
+
+
+  
 
     /* Style headings */
     h1 {
