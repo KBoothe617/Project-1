@@ -38,5 +38,18 @@ if(title && ingredients && directions && cookingTime) {
         cookingTime: cookingTime
     };
 
+// Get existing recipes from local storage or initialize and emtpy array
+const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+recipes.push(recipe);
+
+// Save recipes to local storage
+localStorage.setItem('recipes', JSON.stringify(recipes));
+
+// Clear form
+document.getElementById('recipeForm').reset();
+
+// Display recipes
+displayRecipes();
+
 }
 });
