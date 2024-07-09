@@ -53,3 +53,12 @@ displayRecipes();
 
 }
 });
+
+// Function to display recipes from local storage
+function displayRecipes() {
+    var recipeListDiv = document.getElementById('recipeList');
+    recipeListDiv.innerHTML = '';
+
+    var recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+
+}
