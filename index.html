@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!--Link to css sheet, Title of the site-->
+    <!--Link to css sheet and Bootstrap, Title of the site-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Personal Recipe Catalog</title>
@@ -17,25 +17,27 @@
     <body>
         <!--Header with title-->
         <header>
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center">Personal Recipe Catalog</h1>
+            <div class="img-container">
+                <img src="./assets/img/cooking.jpg" alt="food" class="img-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center">Personal Recipe Catalog</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <!--Button for new recipe pop up in headers navagation bar-->
-                    <!--ID addNewRecipe for button-->
-                    <button class="btn btn-primary" id="addNewRecipe">Add New Recipe</button>
+                <div class="row">
+                    <div class="col-12">
+                        <!--Button for new recipe pop up in headers navagation bar-->
+                        <!--ID addNewRecipe for button-->
+                        <button class="btn btn-primary" id="addNewRecipe">Add New Recipe</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <ul class="recipe-list" id="recipeList">
-                        <!--Recipes will dynamically be added here-->
-                    </ul>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="recipe-list" id="recipeList">
+                            <!--Recipes will dynamically be added here-->
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
         </header>
 
