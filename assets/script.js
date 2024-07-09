@@ -28,6 +28,15 @@ const ingredients = document.getElementById('ingredients').value.trim();
 const directions = document.getElementById('directions').value.trim();
 const cookingTime = document.getElementById('cookingTime').value.trim();
 
+   
+// Validate and add to local storage
+if(title && ingredients && directions && cookingTime) {
+    const recipe = {
+        name: title,
+        ingredients: ingredients,
+        directions: directions,
+        cookingTime: cookingTime
+    };
 
+}
 });
-
