@@ -12,54 +12,74 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
-<div class="container">
-
-    <body>
-        <!--Header with title-->
-        <header>
-            <div class="img-container">
-
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="text-center">Personal Recipe Catalog</h1>
-                    </div>
+<body>
+    <!--Header with title-->
+    <header>
+        <div class="container">
+            <img src="./assets/img/cooking.jpg" alt="food" class="img-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Personal Recipe Catalog</h1>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <!--Button for new recipe pop up in headers navagation bar-->
-                        <!--ID addNewRecipe for button-->
-                        <button class="btn btn-primary" id="addNewRecipe">Add New Recipe</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="recipe-list" id="recipeList">
-                            <!--Recipes will dynamically be added here-->
-                        </ul>
-                    </div>
-                </div>
-
-        </header>
-
-        <main>
-            <!--Sidebar that will store recipes-->
-            <!--Id sidebar for container for recipes-->
-            <div id="sidebar">
-                <!--Class recipe-list and Id recipeList these are children under the sidebar, maybe we rename these so they don't get confused-->
-                <ul class="recipe-list" id="recipeList">
-                    <!--Recipes will dynamically be added here-->
-                </ul>
             </div>
-        </main>
+        </div>
+        <!--ID addNewRecipe for button-->
+        <button class="btn btn-primary" id="addNewRecipe">Add New Recipe</button>
+    </header>
 
-        <!--Footer we will add in the information we want here later-->
-        <footer>
-            <p>Place Holder Text</p>
-        </footer>
-        <!--Link to java script-->
-        <script src="./assets/script.js"></script>
-</div>
+    <main>
+        <!--Sidebar that will store recipes-->
+        <!--Id sidebar for container for recipes-->
+        <div id="recipeList">
+            <!--Recipes will dynamically be added here-->
+        </div>
+
+        <!--Modal for adding new recipes-->
+        <div id="addRecipeModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Recipe</h5>
+                    <span class="close">&times;</span>
+                </div>
+
+                <form id="recipeForm">
+                    <div class="modal-body">
+                        <label for="recipeName">Title</label>
+                        <input type="text" class="form-control" id="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="directions">Directions</label>
+                        <textarea class="form-control" id="directions" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ingredients">Ingredients</label>
+                        <textarea class="form-control" id="ingredients" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cookingTime">Cook Time (minutes)</label>
+                        <input type="number" class="form-control" id="cookingTime" required>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="bt btn-primary">Save</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer we will add in the information we want here later-->
+    <footer>
+        <p>Aisha Siddiqa, Joshua Patton, and Kaleb Boothe Group Project</p>
+    </footer>
+    <!--Link to java script-->
+    <script src="./assets/script.js"></script>
 </body>
+</div>
 
 
 </html>
