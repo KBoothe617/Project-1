@@ -44,3 +44,11 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    /* main background image */
+    main  {
+        background-image: url("Users/joshuapatton/bootcamp/Project-1/assets/img/images (1).jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
