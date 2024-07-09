@@ -16,3 +16,14 @@ btn.onclick = function() {
 span.onclick = function() {
     modal.style.display = "none";
 }
+
+// Function for form submission
+const form = document.getElementById('recipeForm');
+form.addEventListener('submit', function(event) {
+    event.preventDefault (); // Prevents default form submission
+
+});
+
+
+
+
