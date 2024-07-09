@@ -22,8 +22,12 @@ const form = document.getElementById('recipeForm');
 form.addEventListener('submit', function(event) {
     event.preventDefault (); // Prevents default form submission
 
+// Retrieve values of form
+const title = document.getElementById('title').value.trim();
+const ingredients = document.getElementById('ingredients').value.trim();
+const directions = document.getElementById('directions').value.trim();
+const cookingTime = document.getElementById('cookingTime').value.trim();
+
+
 });
-
-
-
 
