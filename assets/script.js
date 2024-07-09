@@ -61,4 +61,25 @@ function displayRecipes() {
 
     var recipes = JSON.parse(localStorage.getItem('recipes')) || [];
 
+// Sort recipes by their cooking time (quickest to longest)
+// parseInt converts the cooking time values to integers to ensure correct sorting
+recipes.sort((a, b) => parseInt(a.cookingTime) - parseInt(b.cookingTime));
+
+// forEach loop interates through the sorted recipes array and construct HTML for each recipe card, which is appended to the recipeListDiv
+recipes.forEach(function(recipe, index) {
+    var recipeCard = `
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">${recipe.name}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Ingredients:</h6>
+          <p class="card-text">${recipe.ingredients}</p>
+          <h6>Directions:</h6>
+          <p class="card-text">${recipe.directions}</p>
+          <p class="card-text"><strong>Cooking Time:</strong> ${recipe.cookingTime} minutes</p>
+          <button type="button" class="btn btn-delete" onclick="deleteRecipe(${index})">Delete</button>
+        </div>
+      </div>
+    `;
+    recipeListDiv.innerHTML += recipeCard;
+  });
 }
