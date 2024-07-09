@@ -32,3 +32,15 @@
         color: #666;
         margin-bottom: 20px;
     }
+
+    /* Header Background Pic */ 
+    header {
+        background-image: url("images.jpg");
+    }
+    /* Header Background Image */
+    header {
+        background-image: url("/Users/joshuapatton/bootcamp/Project-1/assets/img/images.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
