@@ -92,3 +92,9 @@ function deleteRecipe(index) {
     displayRecipes();
   }
 
+// Initial display of recipes on page load 
+//displayRecipes function is being called inside the DOMContentLoaded event listener to make sure that when page loads/reloads, recipes are correctly displayed
+document.addEventListener('DOMContentLoaded', function() {
+    displayRecipes();
+});
+
