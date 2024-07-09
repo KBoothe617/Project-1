@@ -83,3 +83,12 @@ recipes.forEach(function(recipe, index) {
     recipeListDiv.innerHTML += recipeCard;
   });
 }
+
+// Function to delete a recipe
+function deleteRecipe(index) {
+    var recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+    recipes.splice(index, 1);
+    localStorage.setItem('recipes', JSON.stringify(recipes));
+    displayRecipes();
+  }
+
