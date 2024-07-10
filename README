@@ -3,7 +3,7 @@
 ```md
 As a USER I want to enter my recipes
 So that they will list in order of quickest cooktimes
-And display last recipe entered prominently
+And allows for me to remove unwanted recipes
 ```
 
 ## Acceptance Criteria
