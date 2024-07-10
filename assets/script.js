@@ -71,9 +71,9 @@ recipes.forEach(function(recipe, index) {
     <div class="card">
         <div class="card-body">
           <h5 class="card-title">${recipe.name}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Ingredients:</h6>
+          <h6 class="card-ingredients">Ingredients:</h6>
           <p class="card-text">${recipe.ingredients}</p>
-          <h6>Directions:</h6>
+          <h6 class="card-directions">Directions:</h6>
           <p class="card-text">${recipe.directions}</p>
           <p class="card-text"><strong>Cooking Time:</strong> ${recipe.cookingTime} minutes</p>
           <button type="button" class="btn btn-delete" onclick="deleteRecipe(${index})">Delete</button>
