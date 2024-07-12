@@ -25,7 +25,8 @@
     h1 {
         text-decoration: underline;
         font-style: italic;
-        font-weight: bold color #333;
+        font-weight: bold;
+        color: white;
         margin-bottom: 50px;
         z-index: 1;
     }
@@ -99,9 +100,21 @@
         text-align: center;
     }
 
+    .footerText p {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
+
     .card {
         width: 50%;
         border-radius: 15px;
         margin-bottom: 5px;
         background-color: beige;
+    }
+
+    .background-image {
+        background-image: url("./img/spoons.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
