@@ -56,8 +56,31 @@
         cursor: pointer;
     }
 
+
     .button:hover {
         background-color: #555;
+    }
+
+    #addRecipeModal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        margin-left: 50%;
+        margin-top: 5%;
+        overflow: auto;
+    }
+
+    .modal-content {
+        background-color: beige;
+    }
+
+    .modal-body {
+        padding: 20px;
+        background-color: beige;
     }
 
     footer {
@@ -74,4 +97,11 @@
         text-decoration: none;
         font-size: 16px;
         text-align: center;
+    }
+
+    .card {
+        width: 50%;
+        border-radius: 15px;
+        margin-bottom: 5px;
+        background-color: beige;
     }
