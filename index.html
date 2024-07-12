@@ -16,20 +16,24 @@
     <!--Header with title-->
     <header>
         <div class="container">
-            <img src="./assets/img/spoons.jpeg" alt="spoons on counter" class="imgSpoons">
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center">Personal Recipe Catalog</h1>
+
                 </div>
             </div>
         </div>
         <!--ID addNewRecipe for button-->
-        <button class="btn btn-primary" id="addNewRecipe">Add New Recipe</button>
+        <div class="position-relative">
+            <div class="position-absolute bottom-0 end-0">
+                <button class="btn btn-primary" id="addNewRecipe">Add New Recipe</button>
+            </div>
+        </div>
     </header>
 
     <main>
         <!--Add background image-->
-        <img src="./assets/img/cuttingboard.jpeg" alt="cutting board on counter" class="imgCutttingboard">
+
         <!--Sidebar that will store recipes-->
         <!--Id sidebar for container for recipes-->
         <div id="recipeList">
@@ -72,11 +76,14 @@
                 </form>
             </div>
         </div>
+
     </main>
 
     <!--Footer we will add in the information we want here later-->
     <footer>
-        <p>Aisha Siddiqa, Joshua Patton, and Kaleb Boothe Group Project</p>
+        <div class="footerText">
+            <p>Aisha Siddiqa, Joshua Patton, and Kaleb Boothe Group Project</p>
+        </div>
     </footer>
     <!--Link to java script-->
     <script src="./assets/script.js"></script>
