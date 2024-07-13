@@ -31,6 +31,13 @@
         z-index: 1;
     }
 
+    h2 {
+        font-family: cursive;
+        font-size: 24px;
+        color: whitesmoke;
+        margin-bottom: 20px;
+    }
+
     /* Style paragraphs */
     p {
         font-size: 16px;
@@ -38,9 +45,12 @@
         margin-bottom: 20px;
     }
 
-    /* Background color for the container */
-    body {
-        background-color: rgba(141, 118, 114, 0.993);
+    /* Background Image Main */
+    .background-image2 {
+        background-image: url("./img/table.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh
     }
 
     /* Style the button */
@@ -84,6 +94,12 @@
         background-color: beige;
     }
 
+    main {
+        border-radius: 25px;
+        padding: 10px 0;
+
+    }
+
     footer {
         background-color: #333;
         border-radius: 25px;
@@ -107,14 +123,17 @@
     }
 
     .card {
-        width: 50%;
+        background-image: url("./img/utensils.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 45%;
         border-radius: 15px;
         margin-bottom: 5px;
-        background-color: beige;
+
     }
 
     .background-image {
-        background-image: url("./img/spoons.jpeg");
+        background-image: url("./img/wood.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
